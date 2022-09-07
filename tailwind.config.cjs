@@ -7,7 +7,11 @@ module.exports = {
       screen: {
         tablet: '960px',
         desktop: '1280px',
-      }
+      },
+      fontFamily: {
+        Sora: ['Sora', 'sans-serif'],
+        Inter: ['Inter', 'sans-serif'],
+      },
     },
     colors: {
       bg: '#131417',
