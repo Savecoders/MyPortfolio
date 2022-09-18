@@ -7,16 +7,17 @@ const Home: NextPage = () => {
     <>
       <div>
         <Head>
-          <title>My page title</title>
-          <meta property="og:title" content="My page title" key="title" />
+          <title>My Portfolio</title>
+          <meta property="og:title" content="My Portfolio" key="title" />
         </Head>
         <Head>
-          <meta property="og:title" content="My new title" key="title" />
+          <meta property="og:title" content="My Portfolio" key="title" />
         </Head>
       </div>
       <header className="bg-white h-screen flex flex-col dark:bg-bg">
         <Navbar />
         <Hero />
+
       </header>
     </>
   );

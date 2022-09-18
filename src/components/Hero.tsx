@@ -5,7 +5,7 @@ import { Linkedin, Github, Twitter } from './icons/social'
 
 const Hero = () => {
   return (
-    <footer className='w-screen mx-auto h-3/5 flex flex-col justify-around items-center sm:flex-row sm:justify-evenly'>
+    <footer className='h-3/5 flex flex-col justify-around items-center sm:flex-row sm:justify-evenly'>
 
       <div className="lg:max-w-lg">
         <h2 className=" font-Inter mt-4 mb-8 font-light text-1xl dark:text-primary lg:text-2xl ">Hi, i am</h2>
@@ -30,7 +30,7 @@ const Hero = () => {
             height={240} />
         </div>
 
-        <section className='flex flex-row p-10 md:flex-col'>
+        <section className='flex flex-row pl-14 md:flex-col'>
           <Linkedin />
           <Github />
           <Twitter />

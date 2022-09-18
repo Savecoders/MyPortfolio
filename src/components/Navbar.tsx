@@ -2,8 +2,8 @@ import Link from "next/link"
 
 const Navbar = () => {
   return (
-    <nav className=" bg-bg py-9">
-      <div className="container flex items-center justify-between px-16 py-3 mx-auto md:bg-sec rounded-lg">
+    <nav className=" w-screen flex justify-center  bg-bg py-10">
+      <div className="container flex items-center justify-between px-20 py-4  md:bg-sec rounded-lg">
         <Link href={"#"}>
           <a className="text-lg font-Sora font-semibold dark:text-title_sec lg:text-1xl" href="#">Savecode</a>
         </Link>
