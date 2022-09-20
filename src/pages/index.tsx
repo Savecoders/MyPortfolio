@@ -14,7 +14,7 @@ const Home: NextPage = () => {
           <meta property="og:title" content="My Portfolio" key="title" />
         </Head>
       </div>
-      <header className="bg-white h-screen flex flex-col dark:bg-bg">
+      <header className="bg-white h-screen flex flex-col bg-bg">
         <Navbar />
         <Hero />
 
