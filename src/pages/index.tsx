@@ -1,6 +1,9 @@
 import type { NextPage } from "next";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
+import About from "../components/About";
+import { MoreSkills } from "../components/MoreSkills";
+import { Phrases } from "../components/Phrases";
 import Head from "next/head";
 const Home: NextPage = () => {
   return (
@@ -14,11 +17,11 @@ const Home: NextPage = () => {
           <meta property="og:title" content="My Portfolio" key="title" />
         </Head>
       </div>
-      <header className="bg-white h-screen flex flex-col bg-bg">
-        <Navbar />
-        <Hero />
-
-      </header>
+      <Navbar />
+      <Hero />
+      <About />
+      <MoreSkills />
+      <Phrases />
     </>
   );
 };
