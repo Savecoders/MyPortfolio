@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
-import { MoreSkills } from "../components/MoreSkills";
+import MoreSkills from "../components/MoreSkills";
 import { Phrases } from "../components/Phrases";
 import Head from "next/head";
 const Home: NextPage = () => {

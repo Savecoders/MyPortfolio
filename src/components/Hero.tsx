@@ -4,10 +4,10 @@ import { Linkedin, Github, Twitter } from '../assets/icons/social'
 
 const Hero = () => {
   return (
-    <footer className='w-full py-24 flex flex-col justify-center bg-bg'>
+    <footer className=' py-24 flex flex-col  justify-center items-center bg-bg'>
 
 
-      <div className='max-w-8xl flex flex-row justify-evenly'>
+      <div className='flex flex-row justify-evenly'>
 
         <section className="lg:max-w-lg">
           <h2 className=" font-Inter mt-4 mb-8 font-light text-1xl text-primary lg:text-2xl 2xl:text-3xl text-1xl">Hi, i am</h2>
