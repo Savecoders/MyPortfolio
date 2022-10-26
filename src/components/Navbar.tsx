@@ -1,39 +1,38 @@
 import Link from "next/link"
-
 const Navbar = () => {
+
   return (
 
-    <nav className="flex m-auto justify-center items-center py-14 px-2 bg-bg">
+    <nav className="p-4 mt-3 mb-16 flex justify-around items-center bg-sec rounded-lg">
 
-      <div className="container flex items-center justify-between px-20 py-4 bg-sec rounded-lg">
 
-        <Link href={"#"}>
-          <a className="text-lg font-Sora font-semibold text-title_sec lg:text-1xl" href="#">Savecode</a>
-        </Link>
+      <Link href={"#"}>
+        <a className="text-xl font-Sora font-semibold text-title_sec lg:text-1xl" href="#">SaveCode</a>
+      </Link>
 
-        <section className="hidden w-full md:block md:w-auto">
+      <section></section>
 
-          <ul className="flex flex-col p-2 md:flex-row md:space-x-8 md:mt-0">
-            <li className='pr-6 pl-3'>
-              <Link href={"#"}>
-                <a className=" font-semibold font-Sora text-title">Home</a>
-              </Link>
-            </li>
-            <li className='pr-6 pl-3'>
-              <Link href={"#"}>
-                <a className=" font-semibold font-Sora text-title text-base ">About</a>
-              </Link>
-            </li>
-            <li className='pr-6 pl-3'>
-              <Link href={"#"}>
-                <a className=" font-semibold font-Sora text-title ">Services</a>
-              </Link>
-            </li>
-          </ul>
+      <section className="w-full md:block md:w-auto">
 
-        </section>
+        <ul className="flex flex-col p-3 md:flex-row md:space-x-12">
+          <li className='pr-6 pl-3'>
+            <Link href={"#"}>
+              <a className="text-lg font-semibold font-Sora text-title">Home</a>
+            </Link>
+          </li>
+          <li className='pr-6 pl-3'>
+            <Link href={"#"}>
+              <a className="text-lg font-semibold font-Sora text-title">About</a>
+            </Link>
+          </li>
+          <li className='pr-6 pl-3'>
+            <Link href={"#"}>
+              <a className="text-lg font-semibold font-Sora text-title ">Services</a>
+            </Link>
+          </li>
+        </ul>
 
-      </div>
+      </section>
     </nav>
   )
 }

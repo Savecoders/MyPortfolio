@@ -2,7 +2,7 @@ import { Javascript, Typescript, Git, Node, ReactIcon, Tailwindcss } from "../as
 const MoreSkills = () => {
   return (
     <>
-      <div className=' bg-bg p-28 flex flex-row items-center justify-center '>
+      <div className=' bg-bg p-28 flex flex-row justify-around items-center '>
         <section className=" max-w-xl bg-sec p-12 m-8 rounded-lg">
           <h2 className="py-6 font-Sora font-bold text-2xl text-title_sec">More</h2>
           <div className="font-Inter text-lg text-primary">

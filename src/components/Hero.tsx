@@ -4,43 +4,39 @@ import { Linkedin, Github, Twitter } from '../assets/icons/social'
 
 const Hero = () => {
   return (
-    <footer className=' py-24 flex flex-col  justify-center items-center bg-bg'>
+    <div className='flex flex-row justify-around px-10 pt-12 pb-16'>
 
+      <section className="pl-7">
+        <h2 className=" font-Inter mt-5 mb-9 font-light text-2xl text-primary lg:text-3xl 2xl:text-4xl">Hi, i am</h2>
+        <h1 className=" font-Inter mt-5 mb-9 font-bold text-3xl text-title_sec lg:text-5xl 2xl:text-5xl">Pablo Pincay Alvarez</h1>
+        <h2 className=" font-Inter mt-5 mb-9 font-normal text-2xl text-primary lg:text-3xl 2xl:text-4xl">I like to develop Websites.</h2>
+        <div className="flex flex-col mb-8 space-y-3 lg:space-y-2 lg:flex-row ">
+          <button className=" px-14 py-4 lg:text-lg 2xl:text-1xl tracking-wider font-bold bg-blue text-title uppercase rounded-md lg:w-auto">
+            Download CV
+          </button>
+        </div>
+      </section>
 
-      <div className='flex flex-row justify-evenly'>
+      <div className='flex flex-col justify-center items-center md:flex-row'>
 
-        <section className="lg:max-w-lg">
-          <h2 className=" font-Inter mt-4 mb-8 font-light text-1xl text-primary lg:text-2xl 2xl:text-3xl text-1xl">Hi, i am</h2>
-          <h1 className=" font-Inter mt-4 mb-8 font-bold text-1xl text-title_sec lg:text-4xl 2xl:text-5xl text-2xl">Pablo Pincay Alvarez</h1>
-          <h2 className=" font-Inter mt-4 mb-8 font-normal text-1xl text-primary lg:text-2xl 2xl:text-3xl text-1xl">I like to develop Websites.</h2>
-          <div className="flex flex-col mb-8 space-y-3 lg:space-y-2 lg:flex-row ">
-            <button className=" px-14 py-4 text-sm tracking-wider font-bold bg-blue text-title uppercase rounded-md lg:w-auto">
-              Download CV
-            </button>
-          </div>
+        <div className="hidden  sm:flex items-center justify-center lg:p-8 rounded-full bg-sec ">
+          <Image
+            className='rounded-full -rotate-45'
+            alt="MyPersonalPhoto"
+            src={profile}
+            layout="intrinsic"
+            width={260}
+            height={260} />
+        </div>
+
+        <section className='flex flex-row md:pl-14 md:flex-col space-y-6'>
+          <Twitter />
+          <Linkedin />
+          <Github />
         </section>
 
-        <div className='flex flex-col justify-center items-center md:flex-row'>
-
-          <div className="hidden  sm:flex items-center justify-center lg:p-8 rounded-full bg-sec ">
-            <Image
-              className='rounded-full -rotate-45'
-              alt="Mountains"
-              src={profile}
-              layout="intrinsic"
-              width={240}
-              height={240} />
-          </div>
-
-          <section className='flex flex-row md:pl-14 md:flex-col sm:py-8'>
-            <Linkedin />
-            <Github />
-            <Twitter />
-          </section>
-
-        </div>
       </div>
-    </footer >
+    </div>
   )
 }
 

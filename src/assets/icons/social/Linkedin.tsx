@@ -4,7 +4,6 @@ const SvgLinkedin = () => (
     height={41}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className="m-2"
   >
     <path
       fillRule="evenodd"
