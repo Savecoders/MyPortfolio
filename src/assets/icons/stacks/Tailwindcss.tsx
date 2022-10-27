@@ -4,7 +4,7 @@ const SvgTailwindcss = () => (
     height={40}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className="m-4"
+    className="m-8"
   >
     <g clipPath="url(#tailwindcss_svg__a)">
       <path

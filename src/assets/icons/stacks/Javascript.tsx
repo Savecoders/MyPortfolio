@@ -5,7 +5,7 @@ const SvgJavascript = () => (
     height={40}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    className="m-4"
+    className="m-8"
   >
     <g clipPath="url(#javascript_svg__a)">
       <path d="M0 0h40v40H0V0Z" fill="#F7DF1E" />

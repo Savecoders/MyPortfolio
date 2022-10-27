@@ -2,7 +2,7 @@ import { Javascript, Typescript, Git, Node, ReactIcon, Tailwindcss } from "../as
 const MoreSkills = () => {
   return (
     <>
-      <div className=' bg-bg p-28 flex flex-row justify-around items-center '>
+      <div className='px-28 py-2 flex flex-row justify-around items-center '>
         <section className=" max-w-xl bg-sec p-12 m-8 rounded-lg">
           <h2 className="py-6 font-Sora font-bold text-2xl text-title_sec">More</h2>
           <div className="font-Inter text-lg text-primary">
@@ -10,9 +10,9 @@ const MoreSkills = () => {
             </p>
           </div>
         </section>
-        <section className="flex justify-evenly items-center flex-col max-w-lg p-8">
-          <h2 className="font-Sora font-bold text-3xl text-title_sec ">Skills</h2>
-          <div className="grid grid-cols-3">
+        <section className="flex justify-center  items-center flex-col max-w-lg ">
+          <h2 className="font-Sora font-semibold text-3xl text-title_sec py-3">Skills</h2>
+          <div className="grid grid-cols-3 ">
             <Javascript />
             <Typescript />
             <Git />

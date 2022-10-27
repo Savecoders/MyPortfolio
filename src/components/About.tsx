@@ -3,7 +3,7 @@ import SvgWork from '../assets/icons/personal/Work'
 const About = () => {
   return (
     <div className=' bg-bg p-28 flex flex-row justify-around items-center'>
-      <section className="p-6 m-8 rounded-md">
+      <section className="p-10 m-12">
         <SvgWork />
       </section>
       <section className="max-w-xl bg-sec p-12 m-8 rounded-lg">

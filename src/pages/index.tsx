@@ -3,8 +3,10 @@ import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
 import MoreSkills from "../components/MoreSkills";
+import Projects from "../components/Projects";
 import { Phrases } from "../components/Phrases";
 import Head from "next/head";
+import Form from "../components/form/Form";
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +23,8 @@ const Home: NextPage = () => {
           <About />
           <MoreSkills />
           <Phrases />
+          <Projects />
+          <Form />
         </section>
       </main>
     </div>

@@ -3,7 +3,7 @@ const Navbar = () => {
 
   return (
 
-    <nav className="p-4 mt-3 mb-16 flex justify-around items-center bg-sec rounded-lg">
+    <nav className="p-3 mt-3 mb-16 flex justify-around items-center bg-sec rounded-lg">
 
 
       <Link href={"#"}>

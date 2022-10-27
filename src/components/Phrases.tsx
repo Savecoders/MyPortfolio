@@ -2,10 +2,10 @@
 export const Phrases = () => {
   return (
     <>
-      <div className=' min-w-max bg-bg p-4 flex flex-row justify-around items-center'>
-        <section className="bg-sec p-5 px-20 m-2  rounded-lg">
-          <div className="font-Inter text-lg text-primary">
-            <p>“I can always learning a repeater”
+      <div className='py-20 flex flex-row justify-center items-center'>
+        <section className="bg-sec py-4 px-32 m-2  rounded-lg">
+          <div className="font-Inter text-xl text-primary">
+            <p>“ I can always learning a repeater ”
             </p>
           </div>
         </section>
