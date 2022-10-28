@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <section className="flex flex-col items-center justify-center ">
       <h2 className="font-Sora font-semibold text-3xl text-title_sec py-6">Projects</h2>
-      <div className='px-28 py-2 m-2 grid grid-cols-3  gap-12 pb-20'>
+      <div className='px-4 md:px-28  py-2 md:m-2 grid md:grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-12  md:gap-12 pb-20'>
         <Image src={CryptoApp} width={380} height={290} alt="" className='p-10 rounded-lg' />
         <Image src={GifApp} width={380} height={290} alt="" className='p-10 rounded-lg' />
         <Image src={Masterace} width={380} height={290} alt="" className='p-10 rounded-lg' />

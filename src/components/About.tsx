@@ -2,11 +2,11 @@ import SvgWork from '../assets/icons/personal/Work'
 
 const About = () => {
   return (
-    <div className=' bg-bg p-28 flex flex-row justify-around items-center'>
-      <section className="p-10 m-12">
+    <div className=' p-4 sm:p-12 xl:p-28 flex flex-col-reverse lg:flex-row justify-around items-center'>
+      <section className="p-10 m-8 xl:m-12 ">
         <SvgWork />
       </section>
-      <section className="max-w-xl bg-sec p-12 m-8 rounded-lg">
+      <section className="max-w-xl bg-sec p-8 md:p-12 xl:m-8 rounded-lg">
         <h2 className="py-6 font-Sora font-bold text-2xl text-title_sec">About</h2>
         <div className="font-Inter text-lg text-primary">
           <p className="py-1">I am software developer based in Ecuador.</p>

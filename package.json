@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "svg": "svgr -d src/assets/icons/stacks src/assets/svgs/stacks"
+    "svg": "svgr -d src/assets/icons/other src/assets/svgs/other"
   },
   "dependencies": {
     "next": "12.2.5",
