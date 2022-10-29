@@ -1,5 +1,5 @@
 
-const SvgVector = () => (
+const SvgHambuger = () => (
   <svg
     width={54}
     height={44}
@@ -48,4 +48,4 @@ const SvgVector = () => (
   </svg>
 );
 
-export default SvgVector;
+export default SvgHambuger;

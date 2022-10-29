@@ -2,7 +2,7 @@ import SvgWork from '../assets/icons/personal/Work'
 
 const About = () => {
   return (
-    <div className=' p-4 sm:p-12 xl:p-28 flex flex-col-reverse lg:flex-row justify-around items-center'>
+    <div id='About' className=' p-4 sm:p-12 xl:p-28 flex flex-col-reverse lg:flex-row justify-around items-center'>
       <section className="p-10 m-8 xl:m-12 ">
         <SvgWork />
       </section>
