@@ -2,7 +2,8 @@ import Image, { StaticImageData } from 'next/image'
 import Buttons from './Buttons'
 import { useState } from 'react'
 import getProyects from '../helpers/getProjects'
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimateSharedLayout, motion } from 'framer-motion'
+import Link from 'next/link'
 
 
 interface Project {
@@ -16,44 +17,81 @@ interface Project {
 const Projects = () => {
 
   const projects = getProyects()
-  const [selectedId, setSelectedId] = useState<Project | null>(null)
+  //const [selectedId, setSelectedId] = useState<Project | null>(null)
 
   return (
+
     <section id="Projects" className="flex flex-col items-center justify-center ">
 
       <h2 className="font-Sora font-semibold text-3xl text-title_sec py-6">Projects</h2>
-      <div className='px-4 md:px-16  py-2 md:m-2 grid md:grid-cols-2 xl:grid-cols-3 gap-x-5 gap-y-12  md:gap-12 pb-20'>
+      <div className='flex flex-wrap whitespace-nowrap justify-center items-center m-6 gap-6 pb-10 max-w-7xl '>
 
-        {projects.map((project) => {
+        <AnimateSharedLayout>
 
-          const { id, name, description, date, image, url } = project
+          {projects.map((project) => {
 
-          return (
-            <motion.div
-              layoutId={name}
-              key={id}
-              onClick={() => setSelectedId({ ...project })}
-              whileHover={{ scale: 1.08 }}
-              whileTap={{ scale: 1.1 }}
-              className='bg-bg pt-5 px-4 justify-center rounded-lg cursor-pointer'
-            >
-              <Image src={image} alt={name} width={540} height={420} className=' rounded-lg' />
-              <section className='flex justify-between al items-center py-3 text-center'>
-                <h6 className='font-Sora font-semibold text-lg lg:text-base  text-title'>{name}</h6>
-                <h6 className='font-Sora font-medium text-lg lg:text-base text-title'>{date}</h6>
-              </section>
-            </motion.div>
-          )
-        })}
+            return (
+              <motion.div
+                layout
+                key={project.id}
+                whileHover={{ scale: 1.04 }}
+                className='px-3 pt-3 justify-center rounded-lg '
+              >
+                <ModalImage key={project.name} {...project} />
+              </motion.div>
+            )
 
+          })}
+        </AnimateSharedLayout>
 
       </div>
+
       <Buttons label='More Projects' onClick={() => { "" }} />
-    </section>
+
+    </section >
   )
 }
+
+
+const ModalImage = (Proyect: Project) => {
+
+  const { name, image, date, url } = Proyect
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleOpen = () => setIsOpen(!isOpen);
+
+  return (
+    <motion.div onClick={toggleOpen} className=''>
+      <Link href={url}>
+        <Image src={image} alt={name} width={320} height={240} className=' rounded-lg cursor-pointer' />
+      </Link>
+      <section className='flex justify-between  items-center py-1 text-center cursor'>
+        <Link href={url} >
+          <a className='font-Sora md:text-base font-medium text-icons'>
+            {name}
+          </a>
+        </Link>
+        <h6 className='font-Sora font-medium text-lg lg:text-base text-title'>{date}</h6>
+      </section>
+      {/* <AnimatePresence>{isOpen && <Content key={name} {...Proyect} />}</AnimatePresence> */}
+    </motion.div>
+  )
+
+}
+/* const Content = ({ description }: Project) => {
+  return (
+    <motion.div
+      layout
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className=' bg-sec rounded-lg'
+    >
+      <></>
+    </motion.div>
+  );
+} */
 
 export default Projects
 
 
-//  < Image src = { WeatherApp } width = { 380} height = { 290} alt = "" className = 'p-10 rounded-lg' />
+//< Image src = { WeatherApp } width = { 380} height = { 290} alt = "" className = 'p-10 rounded-lg' />
