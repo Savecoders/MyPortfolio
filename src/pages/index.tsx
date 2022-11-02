@@ -7,8 +7,17 @@ import Projects from "../components/Projects";
 import { Phrases } from "../components/Phrases";
 import Head from "next/head";
 import Form from "../components/form/Form";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 const Home: NextPage = () => {
+
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
+
   return (
     <div>
       <Head>
@@ -19,6 +28,7 @@ const Home: NextPage = () => {
       <main className="bg-bg p-5 md:p-10 dark:bg-gray-900 md:px-20 lg:px-20">
         <section className="min-h-screen">
           <Navbar />
+          <motion.div className="fixed bottom-0 left-0 right-0 h-3 bg-cyan origin-left z-40 " style={{ scaleX }} />
           <Hero />
           <About />
           <MoreSkills />
