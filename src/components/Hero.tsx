@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import profile from '../../public/img/profile.jpg'
+import SvgCoffe from '../assets/icons/personal/Coffe'
 import { Linkedin, Github, Twitter } from '../assets/icons/social'
 import Buttons from './Buttons'
 const Hero = () => {
@@ -28,6 +29,10 @@ const Hero = () => {
             height={260} />
         </div>
 
+        <div className='hidden sm:flex relative float-right -top-16 -right-14 lg:top-24 lg:right-24 p-[0.4rem] rounded-full bg-bg border-solid border-[2px] border-sec'>
+          <SvgCoffe />
+        </div>
+
         <section className=' grid grid-cols-3 lg:grid-cols-1 p-12 lg:space-y-6 gap-x-8'>
           <Link href={"https://twitter.com/Save75_"} >
             <a >
@@ -47,7 +52,7 @@ const Hero = () => {
         </section>
 
       </div>
-    </div>
+    </div >
   )
 }
 

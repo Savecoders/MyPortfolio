@@ -34,7 +34,7 @@ const Home: NextPage = () => {
           <Phrases />
           <Projects />
           <Form />
-          <motion.div className="fixed bottom-0 left-0 right-0 h-2 bg-cyan origin-left rounded-br-lg rounded-tr-lg z-40 " style={{ scaleX }} />
+          <motion.div className="fixed bottom-0 left-0 right-0 h-1 bg-cyan origin-left rounded-br-lg rounded-tr-lg z-40 " style={{ scaleX }} />
         </section>
       </main>
     </div>

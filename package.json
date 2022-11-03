@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "svg": "svgr -d src/assets/icons/other src/assets/svgs/other"
+    "svg": "svgr -d src/assets/icons/personal src/assets/svgs/personal"
   },
   "dependencies": {
     "framer-motion": "^7.6.3",

@@ -22,7 +22,7 @@ module.exports = {
       title: '#E1ECF7',
       title_sec: '#EBF0FF',
       blue: '#6277D7',
-      cyan: '#4773BA',
+      cyan: '#6495ed',
     },
   },
   plugins: [],

@@ -2,7 +2,7 @@ import Image, { StaticImageData } from 'next/image'
 import Buttons from './Buttons'
 import { useState } from 'react'
 import getProyects from '../helpers/getProjects'
-import { AnimateSharedLayout, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import Link from 'next/link'
 
 
@@ -26,23 +26,21 @@ const Projects = () => {
       <h2 className="font-Sora font-semibold text-3xl text-title_sec py-6">Projects</h2>
       <div className='flex flex-wrap whitespace-nowrap justify-center items-center m-6 gap-6 pb-10 max-w-7xl '>
 
-        <AnimateSharedLayout>
 
-          {projects.map((project) => {
+        {projects.map((project) => {
 
-            return (
-              <motion.div
-                layout
-                key={project.id}
-                whileHover={{ scale: 1.04 }}
-                className='px-3 pt-3 justify-center rounded-lg '
-              >
-                <ModalImage key={project.name} {...project} />
-              </motion.div>
-            )
+          return (
+            <motion.div
+              layout
+              key={project.id}
+              whileHover={{ scale: 1.04 }}
+              className='px-3 pt-3 justify-center rounded-lg '
+            >
+              <ModalImage key={project.name} {...project} />
+            </motion.div>
+          )
 
-          })}
-        </AnimateSharedLayout>
+        })}
 
       </div>
 
