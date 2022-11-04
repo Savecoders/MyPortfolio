@@ -9,7 +9,7 @@ const About = () => {
       className=' p-4 sm:p-12 xl:p-28 flex flex-col-reverse lg:flex-row justify-around items-center'>
 
       <motion.section
-        className="p-10 m-8 xl:m-12 "
+        className="py-10 lg:p-10 lg:m-8 xl:m-12 "
         whileHover={{ scale: 1.03 }}
       >
         <SvgWork />

@@ -11,7 +11,7 @@ const Navbar = () => {
     <div>
       <nav className="p-4 sm:mt-3 mb-16 flex justify-between sm:justify-around items-center sm:bg-sec rounded-lg">
         <Link href={"#"}>
-          <a className="text-xl font-Sora font-semibold text-title_sec lg:text-1xl" href="#">SaveCode</a>
+          <a className="text-xl font-Sora font-semibold text-title_sec lg:text-1xl hover:text-blue" href="#">SaveCode</a>
         </Link>
         <section className="hidden lg:block"></section>
 
@@ -20,17 +20,17 @@ const Navbar = () => {
           <ul className="flex flex-col p-3 sm:flex-row md:space-x-12">
             <li className='pr-6 pl-3'>
               <Link href={"#About"}>
-                <a className="text-lg font-semibold font-Sora text-title">About</a>
+                <a className="text-lg font-semibold font-Sora text-title hover:text-icons ">About</a>
               </Link>
             </li>
             <li className='pr-6 pl-3'>
               <Link href={"#Skills"}>
-                <a className="text-lg font-semibold font-Sora text-title">Skills</a>
+                <a className="text-lg font-semibold font-Sora text-title hover:text-icons ">Skills</a>
               </Link>
             </li>
             <li className='pr-6 pl-3'>
               <Link href={"#Projects"}>
-                <a className="text-lg font-semibold font-Sora text-title ">Projects</a>
+                <a className="text-lg font-semibold font-Sora text-title hover:text-icons ">Projects</a>
               </Link>
             </li>
           </ul>
